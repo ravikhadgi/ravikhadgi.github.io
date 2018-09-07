@@ -25,7 +25,7 @@
     vm.model = {};
     vm.options = {};
 		
-		$http.get('http://appsdev1istore.clopay.com/OA_HTML/erpintegra/cz2.jsp?model=SPR&resp=IBE_CUSTOMER').then(
+		$http.get('https://appsdev1istore.clopay.com/OA_HTML/erpintegra/cz2.jsp?model=SPR&resp=IBE_CUSTOMER').then(
 			function(resp) {
 				var nodes = resp.data.nodes.filter(function(entry){
 					return entry.type == 8;
